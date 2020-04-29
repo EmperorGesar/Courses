@@ -24,10 +24,8 @@ public class asn2 {
                 current = reader.readLine().split("");
 
                 for (int j = 0; j < 71; j++){
-
                     token[i][j] = current[j].toCharArray()[0];
                     System.out.print(token[i][j]);
-
                 }
 
                 System.out.println();
@@ -37,7 +35,6 @@ public class asn2 {
             uandf unionFind = new uandf(71 * 71 + 1);
 
             for (int i = 0; i < 71; i++) {
-
                 for (int j = 0; j < 71; j++) {
 
                     if (token[i][j] == '+'){
@@ -55,7 +52,6 @@ public class asn2 {
                     }
 
                 }
-
             }
 
             int size = unionFind.final_sets();
@@ -131,7 +127,6 @@ public class asn2 {
             int temp;
 
             for (int i = p; i < r; i++){
-
                 if (array[i][1] <= x){
 
                     q = q + 1;
@@ -139,7 +134,6 @@ public class asn2 {
                     temp = array[q][0]; array[q][0] = array[i][0]; array[i][0] = temp;
 
                 }
-
             }
 
             temp = array[q + 1][1]; array[q + 1][1] = array[r][1]; array[r][1] = temp;

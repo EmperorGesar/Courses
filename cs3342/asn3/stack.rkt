@@ -1,0 +1,35 @@
+#lang racket
+;Implementation of a stack
+
+(define make-stack
+  (lambda ()
+    (let ((stack '()))
+      (lambda (operation . args)
+        (case operation
+          ((empty?) (null? stack))
+          ((push!) (set! stack (cons (car args) stack)))
+          ((top) (if (null? stack)
+                 (display "empty stack: cannot get the top\n")
+                 (car stack)))
+          ((pop!) (if (null? stack)
+                  (display "empty stack: cannot pop\n")
+                  (set! stack (cdr stack))))
+          ((top-nth) (if (< (length stack) (car args))
+                         (display "not enough elements\n")
+                         (list-ref stack (- (car args) 1))))
+          (else (display "unknown operation\n")))))))
+
+(define my_stack (make-stack))
+(my_stack 'push! 4)
+(my_stack 'push! 1)
+(my_stack 'push! 5)
+(my_stack 'top)
+(my_stack 'top-nth 2)
+(my_stack 'top-nth 4)
+(my_stack 'pop!)
+(my_stack 'pop!)
+(my_stack 'empty)
+(my_stack 'empty?)
+(my_stack 'pop!)
+(my_stack 'top)
+(my_stack 'pop!)

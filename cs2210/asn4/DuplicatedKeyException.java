@@ -1,10 +1,6 @@
 /**
  * The exception performed for the put() method of the BST
  * when the target data already exists in the tree
- * <p>
- *
- * @author Wenhan Sun wsun228 251020850
- *
  */
 
 public class DuplicatedKeyException extends Exception{

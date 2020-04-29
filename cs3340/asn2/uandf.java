@@ -70,10 +70,12 @@ public class uandf {
         int k = 0;
 
         for (int i = 0; i < this.parent.length - 1; i++){
+
             if (i == find_set(i)){
                 list[k] = i;
                 k = k + 1;
             }
+
         }
 
         int[] temp = new int[this.parent.length - 1];

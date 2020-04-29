@@ -1,10 +1,6 @@
 /**
  * The data structure to store the configuration string
  * of the game board and its related feedback score
- * <p>
- *
- * @author Wenhan Sun wsun228 251020850
- *
  */
 
 public class Record {

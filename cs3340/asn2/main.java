@@ -3,7 +3,7 @@ import java.io.FileReader;
 import java.io.IOException;
 
 /**
- * Main of asn2
+ * Main of asn2 for processing the input graph
  */
 
 public class asn2 {

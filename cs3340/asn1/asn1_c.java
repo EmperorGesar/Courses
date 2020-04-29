@@ -85,10 +85,8 @@ public class asn1_c {
             return result;
 
         } else {
-
             result = fib(n / 2);
             return multiply(multiply(result, result), fib(n % 2));
-
         }
 
     }
@@ -109,10 +107,8 @@ public class asn1_c {
             cur = fib(i * 10);
 
             for (int j = 63; j >= 0; j--){
-
                 if (cur[2][j] != 0) start = true;
                 if (start) System.out.print(cur[2][j]);
-
             }
 
             if (i == 0) System.out.print(cur[1][0]);

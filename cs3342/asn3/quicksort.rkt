@@ -1,5 +1,5 @@
 #lang racket
-;Quicksort algorithm
+;Implementation of the quicksort algorithm
 
 (define quicksort
   (lambda (L)

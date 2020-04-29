@@ -1,9 +1,5 @@
 /**
  * The class to store the x and y coordinates of the pixel in the figure
- * <p>
- *
- * @author Wenhan Sun wsun228 251020850
- *
  */
 
 public class Location {

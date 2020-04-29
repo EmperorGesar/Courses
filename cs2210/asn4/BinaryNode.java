@@ -1,9 +1,5 @@
 /**
  * The class to operate pixels as nodes which are performed in the BST
- * <p>
- *
- * @author Wenhan Sun wsun228 251020850
- *
  */
 
 public class BinaryNode {

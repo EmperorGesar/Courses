@@ -1,5 +1,5 @@
 /**
- * Union-find structure
+ * Union-find structure to find connected components
  */
 
 public class uandf {

@@ -58,10 +58,8 @@ public class asn1_b {
             cur = fib(i * 10);
 
             for (int j = 63; j >= 0; j--){
-
                 if (cur[1][j] != 0) start = true;
                 if (start) System.out.print(cur[1][j]);
-
             }
 
             if (i == 0) System.out.print(cur[1][0]);

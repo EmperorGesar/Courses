@@ -1,10 +1,6 @@
 /**
  * The game board that is stored in a 2-dimensional character array
  * which will be executed dynamically during the process of the game
- * <p>
- *
- * @author Wenhan Sun wsun228 251020850
- *
  */
 
 public class nk_TicTacToe {

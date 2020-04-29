@@ -1,5 +1,5 @@
 /* 
- * Removes comments from a given C program
+ * Removes comments from a given cpp program
  */
 
 #include <iostream>

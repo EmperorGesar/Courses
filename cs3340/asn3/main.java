@@ -100,7 +100,7 @@ public class asn3 {
                 u = queue.min_id();
                 queue.delete_min();
 
-                if (u != 0 ){
+                if (pres[u] != 0 ){
                     System.out.println(pres[u] + ", " + u + ", w: " + keys[u] + "; ");
                 }
 

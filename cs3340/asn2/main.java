@@ -4,9 +4,6 @@ import java.io.IOException;
 
 /**
  * Main of asn2
- *
- * @author Wenhan Sun wsun228 251020850
- *
  */
 
 public class asn2 {

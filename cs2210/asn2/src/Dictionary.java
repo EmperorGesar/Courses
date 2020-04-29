@@ -3,10 +3,6 @@ import static java.lang.Math.pow;
 
 /**
  * The hash dictionary storing objects of the Record class
- * <p>
- *
- * @author Wenhan Sun wsun228 251020850
- *
  */
 
 public class Dictionary implements DictionaryADT{

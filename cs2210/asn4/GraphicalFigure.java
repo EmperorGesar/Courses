@@ -1,18 +1,14 @@
 /**
  * The class to store the data of the figure,
  * and the pixels in the figure are to be stored into a BST
- * <p>
- *
- * @author Wenhan Sun wsun228 251020850
- *
  */
 
 public class GraphicalFigure implements GraphicalFigureADT{
 
-    int identifier, width, height;
-    String type;
-    Location offset;
-    BinarySearchTree tree;
+    private int identifier, width, height;
+    private String type;
+    private Location offset;
+    private BinarySearchTree tree;
 
     /**
      * Constructor

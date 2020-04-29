@@ -1,9 +1,5 @@
 /**
  * The class to store the coordinates and the color of the pixel
- * <p>
- *
- * @author Wenhan Sun wsun228 251020850
- *
  */
 
 public class Pixel {

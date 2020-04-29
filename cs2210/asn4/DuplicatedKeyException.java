@@ -10,9 +10,7 @@ public class DuplicatedKeyException extends Exception{
      * @param message Message extends the Exception class as default
      */
     public DuplicatedKeyException(String message){
-
         super(message);
-
     }
 
 }

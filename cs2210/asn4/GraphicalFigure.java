@@ -91,9 +91,7 @@ public class GraphicalFigure implements GraphicalFigureADT{
      * @throws DuplicatedKeyException When the target pixel already exists in the BST
      */
     public void addPixel(Pixel pix) throws DuplicatedKeyException {
-
         this.tree.put(this.tree.getRoot(), pix);
-
     }
 
     /**

@@ -1,9 +1,5 @@
 /**
  * The BST formed with nodes to store the data of pixels of the figure
- * <p>
- *
- * @author Wenhan Sun wsun228 251020850
- *
  */
 
 public class BinarySearchTree implements BinarySearchTreeADT{

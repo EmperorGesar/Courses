@@ -175,12 +175,10 @@ void bstree_free(BStree bst) {
 
     freeNode(bst);
     free(bst->tree_nodes);
-
     free(bst);
 
 }
 
-// add comments
 static Data *bst_search(BStree bst, int index, Key *key){
 
     if (index == 0){
@@ -199,12 +197,10 @@ static Data *bst_search(BStree bst, int index, Key *key){
 
 }
 
-// add comments
 Data *bstree_search(BStree bst, Key *key){
     return bst_search(bst, bst->root, key);
 }
 
-// add comments
 static Key *bst_data_search(BStree bst, int index, Data data){
 
     if (index == 0) {
@@ -229,7 +225,6 @@ static Key *bst_data_search(BStree bst, int index, Data data){
 
 }
 
-// add comments
 Key *bstree_data_search(BStree bst, Data data){
     return bst_data_search(bst, bst->root, data);
 }

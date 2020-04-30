@@ -18,7 +18,8 @@ Loop	LDRB	r2, [r0, #1]!	 		; instruction 3 : load the next odd index byte of the
 						;		  and r4 to r5
 Mod	CMP	r4, #10				; instruction 13: mod 10 by subtraction, first compare the sum stored in register r4 with #10
       	SUBGE	r4, r4, #10			; instruction 14: if larger than #10, subtract #10 from register r4
-      	BGT	Mod				; instruction 15: if the remainder larger than #0, goto label Mod10 for next step of division,                                  		;                 and if less than #10, break
+      	BGT	Mod				; instruction 15: if the remainder larger than #0, goto label Mod10 for next step of division,
+						;                 and if less than #10, break
       	MOV	r0, #1			    	; instruction 16: put #1 in register r0 to assume the string code is valid
       	CMP	r4, #0				; instruction 17: compare the remainder stored in register r4 with #0
       	MOVNE	r0, #2				; instruction 18: if the remainder is not #0, put #2 in register r0, and the string code 

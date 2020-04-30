@@ -1,8 +1,5 @@
 /**
  * The concrete implementation of {@link SortingAlgorithm} algorithm S1 (ex. Quick Sort)
- *
- * @author Wenhan Sun wsun228 251020850
- *
  */
 
 public class SortingAlgorithmS1 implements SortingAlgorithm {

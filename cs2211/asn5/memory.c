@@ -57,8 +57,6 @@ void mem_print(void){
 
 // Free memory used for the array and the binary search tree
 void mem_free(void){
-
     free(memory);
     bstree_free(bst);
-
 }

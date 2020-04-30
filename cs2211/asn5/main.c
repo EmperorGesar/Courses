@@ -4,7 +4,7 @@
 
 int main(){
 
-    FILE *input = fopen("E:\\UWO\\Soph\\Fall\\cs2211\\assignments\\assign5\\assign5\\input", "r");
+    FILE *input = fopen("infile", "r");
 
     int i, size, temp;
     char cur;

@@ -8,7 +8,7 @@ int main(void) {
 
     bst = bstree_ini(256);
 
-    FILE *input = fopen("E:\\UWO\\Soph\\Fall\\cs2211\\assignments\\assign4\\untitled\\input", "r");
+    FILE *input = fopen("input", "r");
 
     char cur;
     int i, id, data;

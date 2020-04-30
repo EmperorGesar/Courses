@@ -1,8 +1,5 @@
 /**
  * The sample object in the sequence to sort
- *
- * @author Wenhan Sun wsun228 251020850
- *
  */
 
 public class Obj {

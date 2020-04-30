@@ -1,9 +1,5 @@
 /**
  * The exception throws by the map
- * <p>
- *
- * @author Wenhan Sun wsun228 251020850
- *
  */
 
 public class MapException extends Exception {

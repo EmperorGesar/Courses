@@ -1,8 +1,5 @@
 /**
  * The class for the implementation of factory design pattern which chooses the algorithms
- *
- * @author Wenhan Sun wsun228 251020850
- *
  */
 
 public class AlgorithmSelector {

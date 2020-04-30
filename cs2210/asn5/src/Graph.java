@@ -3,10 +3,6 @@ import java.util.Iterator;
 
 /**
  * The graph to represent the map with nodes and edges
- * <p>
- *
- * @author Wenhan Sun wsun228 251020850
- *
  */
 
 public class Graph implements GraphADT {

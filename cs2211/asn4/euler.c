@@ -1,4 +1,3 @@
-/*
 #include <stdio.h>
 
 double factorial(int n){
@@ -36,4 +35,3 @@ int main(){
     printf("\n");
 
 }
-*/

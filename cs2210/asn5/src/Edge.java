@@ -1,9 +1,5 @@
 /**
  * The edge of the graph which stores the two nodes and the type
- * <p>
- *
- * @author Wenhan Sun wsun228 251020850
- *
  */
 
 public class Edge {

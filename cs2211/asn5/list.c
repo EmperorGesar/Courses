@@ -76,10 +76,8 @@ void list_print(List list){
     if (list->next == NULL){
         return;
     } else {
-
         print_list_node(list->next);
         list_print(list->next);
-
     }
 
 }
@@ -90,10 +88,8 @@ void list_free(List list){
     if (list == NULL){
         return;
     } else {
-
         list_free(list->next);
         simu_free(list);
-
     }
 
 }

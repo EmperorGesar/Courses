@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-float one(char target, float value){        // Function for the conversion of action 1
+float one(char target, float value){
 
     if (target == 'K'){
         return value * 0.6214;
@@ -11,7 +11,7 @@ float one(char target, float value){        // Function for the conversion of ac
 
 }
 
-float two(char target, float value){        // Function for the conversion of action 2
+float two(char target, float value){
 
     if (target == 'M'){
         return value * 3.2808;
@@ -22,7 +22,7 @@ float two(char target, float value){        // Function for the conversion of ac
 
 }
 
-float three(char target, float value){      // Function for the conversion of action 3
+float three(char target, float value){
 
     if (target == 'C'){
         return value * 0.3937;
@@ -33,7 +33,7 @@ float three(char target, float value){      // Function for the conversion of ac
 
 }
 
-float four(char target, float value){       // Function for the conversion of action 4
+float four(char target, float value){
 
     if (target == 'C'){
         return value * 1.8 + 32;
@@ -57,19 +57,17 @@ int main() {
     printf("  * 4 for conversion between Celsius and Fahrenheit\n");
     printf("  * 5 for quit\n");
 
-    // User input for the first conversion
     scanf("%d", &action);
     getchar();
 
-    while (action != 5){        // Quit in action 5
+    while (action != 5){
 
-        if (action == 1){       // Process to execute action 1
+        if (action == 1){
 
             printf("Please enter the character to select the operation:\n");
             printf("  * 'K' for conversion from Kilometer to Mile\n");
             printf("  * 'M' for conversion from Mile to Kilometer\n");
 
-            // User input for the target type and trim empty characters
             target = getchar();
             while (target == ' ' || target == '\t' || target == '\n'){
                 target = getchar();
@@ -82,7 +80,7 @@ int main() {
                 scanf("%f", &value);
                 getchar();
 
-                answer = one(target, value);        // Call the related function
+                answer = one(target, value);
                 printf("The converted value is:\n");
                 printf("%.2f", *(float *)&answer);
                 if (target == 'K'){
@@ -91,17 +89,16 @@ int main() {
                     printf(" kilometer\n");
                 }
 
-            } else {        // Target type not found
+            } else {
                 printf("Unknown type. Please re-enter:\n");
             }
 
-        } else if (action == 2){        // Process to execute action 2
+        } else if (action == 2){
 
             printf("Please enter the character to select the operation:\n");
             printf("  * 'M' for conversion from Meter to Feet\n");
             printf("  * 'F' for conversion from Feet to Meter\n");
 
-            // User input for the target type and trim empty characters
             target = getchar();
             while (target == ' ' || target == '\t' || target == '\n'){
                 target = getchar();
@@ -114,7 +111,7 @@ int main() {
                 scanf("%f", &value);
                 getchar();
 
-                answer = two(target, value);        // Call the related function
+                answer = two(target, value);
                 printf("The converted value is:\n");
                 printf("%.2f", *(float *)&answer);
                 if (target == 'M'){
@@ -122,17 +119,16 @@ int main() {
                 } else {
                     printf(" meter\n");
                 }
-            } else {        // Target type not found
+            } else {
                 printf("Unknown type. Please re-enter:\n");
             }
 
-        } else if (action == 3){        // Process to execute action 3
+        } else if (action == 3){
 
             printf("Please enter the character to select the operation:\n");
             printf("  * 'C' for conversion from Centimetre to Inch\n");
             printf("  * 'I' for conversion from Inch to Centimetre\n");
 
-            // User input for the target type and trim empty characters
             target = getchar();
             while (target == ' ' || target == '\t' || target == '\n'){
                 target = getchar();
@@ -145,7 +141,7 @@ int main() {
                 scanf("%f", &value);
                 getchar();
 
-                answer = three(target, value);      // Call the related function
+                answer = three(target, value);
                 printf("The converted value is:\n");
                 printf("%.2f", *(float *)&answer);
                 if (target == 'C'){
@@ -154,17 +150,16 @@ int main() {
                     printf(" centimetre\n");
                 }
 
-            } else {        // Target type not found
+            } else {
                 printf("Unknown type. Please re-enter:\n");
             }
 
-        } else if (action == 4){        // Process to execute action 4
+        } else if (action == 4){
 
             printf("Please enter the character to select the operation:\n");
             printf("  * 'C' for conversion from Celsius to Fahrenheit\n");
             printf("  * 'F' for conversion from Fahrenheit to Celsius\n");
 
-            // User input for the target type and trim empty characters
             target = getchar();
             while (target == ' ' || target == '\t' || target == '\n'){
                 target = getchar();
@@ -177,7 +172,7 @@ int main() {
                 scanf("%f", &value);
                 getchar();
 
-                answer = four(target, value);       // Call the related function
+                answer = four(target, value);
                 printf("The converted value is:\n");
                 printf("%.1f", *(float *)&answer);
                 if (target == 'C'){
@@ -186,11 +181,11 @@ int main() {
                     printf(" celsius\n");
                 }
 
-            } else {        // Target type not found
+            } else {
                 printf("Unknown type. Please re-enter:\n");
             }
 
-        } else {        // Action not found
+        } else {
             printf("Unknown action. Please re-enter:\n");
         }
 
@@ -201,7 +196,6 @@ int main() {
         printf("  * 4 for conversion between Celsius and Fahrenheit\n");
         printf("  * 5 for quit\n");
 
-        // User input for the first conversion
         scanf("%d", &action);
         getchar();
 

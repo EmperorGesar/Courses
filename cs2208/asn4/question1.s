@@ -12,8 +12,8 @@ Loop	SUB	r4, r1, #1			; instruction 8 : register r4 traceback 1 byte prior from 
 	CMP	r4, r5				; instruction 9 : compare temporary pointer register r4 with the address of 3 bytes prior of 
 						;		  the ending of string2 pointed by register r5
 	BGE	Skip				; instruction 10: if temporary pointer register r4 is greater or equals to the address, it
-						;		  means the remaining length of string1 is not able to match the pattern "the" 
-						;		  with length 3, branch to skip the comparison processes
+						;		  means the remaining length of string1 is not able to match the pattern 
+						;		  "the" with length 3, branch to skip the comparison processes
 	LDRB	r0, [r4], #1			; instruction 11: load the next byte from string1 pointed by temporary pointer register
 						; 		  r4 to r0
 	CMP	r0, #0x20			; instruction 12: compare character in register r0 with ' '(0x20) to indicate start of word

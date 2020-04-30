@@ -1,9 +1,5 @@
 /**
  * The node of the graph which stores the number and the marking status
- * <p>
- *
- * @author Wenhan Sun wsun228 251020850
- *
  */
 
 public class Node {

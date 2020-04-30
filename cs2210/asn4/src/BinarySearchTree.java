@@ -108,15 +108,11 @@ public class BinarySearchTree implements BinarySearchTreeADT{
                     } else {
 
                         if (r.getParent().getLeft() == r){
-
                             r.getParent().setLeft(null);
                             r.setParent(null);
-
                         } else if (r.getParent().getRight() == r){
-
                             r.getParent().setRight(null);
                             r.setParent(null);
-
                         }
 
                     }
@@ -126,10 +122,8 @@ public class BinarySearchTree implements BinarySearchTreeADT{
                     r.getRight().setParent(r.getParent());
 
                     if (r == this.root){
-
                         this.root = r.getRight();
                         r.setRight(null);
-
                     } else {
 
                         if (r.getParent().getLeft() == r){
@@ -153,10 +147,8 @@ public class BinarySearchTree implements BinarySearchTreeADT{
                     r.getLeft().setParent(r.getParent());
 
                     if (r == this.root){
-
                         this.root = r.getLeft();
                         r.setLeft(null);
-
                     } else {
 
                         if (r.getParent().getLeft() == r){
@@ -292,10 +284,8 @@ public class BinarySearchTree implements BinarySearchTreeADT{
     public Pixel smallest(BinaryNode r) throws EmptyTreeException {
 
         if (r != null){
-
             if (r.getLeft() == null) return r.getData();
             else return smallest(r.getLeft());
-
         } else {
             throw new EmptyTreeException("The tree is empty.");
         }
@@ -311,10 +301,8 @@ public class BinarySearchTree implements BinarySearchTreeADT{
     public Pixel largest(BinaryNode r) throws EmptyTreeException {
 
         if (r != null){
-
             if (r.getRight() == null) return r.getData();
             else return largest(r.getRight());
-
         } else {
             throw new EmptyTreeException("The tree is empty.");
         }

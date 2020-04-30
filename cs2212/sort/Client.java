@@ -2,9 +2,6 @@ import java.util.Random;
 
 /**
  * The client code for testing
- *
- * @author Wenhan Sun wsun228 251020850
- *
  */
 
 public class Client {

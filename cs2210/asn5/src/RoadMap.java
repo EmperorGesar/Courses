@@ -6,10 +6,6 @@ import java.util.Iterator;
 
 /**
  * The class to operate the map file and perform searching process with the graph
- * <p>
- *
- * @author Wenhan Sun wsun228 251020850
- *
  */
 
 public class RoadMap {

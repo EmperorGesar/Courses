@@ -3,7 +3,7 @@ public class TestDict {
   /*
   ** Test program for the Dictionary class.
   ** This program WILL NOT COMPILE if your insert or remove
-  ** methods do not throw a DictionaryException.
+  ** methods do not throw a DictionaryException.a
   */
 
   public static void main(String[] args) {

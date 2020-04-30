@@ -1,8 +1,5 @@
 /**
  * The concrete implementation of {@link SortingAlgorithm} algorithm S2 (ex. Merge Sort)
- *
- * @author Wenhan Sun wsun228 251020850
- *
  */
 
 public class SortingAlgorithmS2 implements SortingAlgorithm {

@@ -34,13 +34,11 @@ public class heap {
 
     public boolean in_heap(int id){
 
-        boolean exist = false;
-
         for (int i = this.n; i <= 2 * this.n - 1; i++){
-            if (id == this.min_heap[i]) exist = true;
+            if (id == this.min_heap[i]) return true;
         }
 
-        return exist;
+        return false;
 
     }
 

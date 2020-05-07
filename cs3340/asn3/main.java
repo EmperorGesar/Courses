@@ -12,7 +12,7 @@ public class asn3 {
 
         try{
 
-            BufferedReader reader = new BufferedReader(new FileReader(args[0]));
+            BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
             int n = Integer.parseInt(reader.readLine());
             int[][] adjList = new int[n + 1][n];

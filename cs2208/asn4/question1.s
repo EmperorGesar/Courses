@@ -48,4 +48,4 @@ Exit	BLT	Loop				; instruction 27: if the current address does not meet the endi
 STRING1	DCB	"and the man said they must go"	; string1
 EoS	DCB	0x00				; end of string1
 STRING2	space	0x7F				; just allocating 127 bytes
-		END
+	END

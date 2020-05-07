@@ -4,8 +4,8 @@
       	MOV	r1, #6			    	; instruction 2 : put #6 in register r1 as loop counter
 Loop	LDRB	r2, [r0, #1]!	 		; instruction 3 : load the next odd index byte of the string to register r2
       	LDRB	r3, [r0, #1]!	 		; instruction 4 : load the next even index byte of the string to register r3
-      	SUB	r2, r2, #48		  	; instruction 5 : subtract #48 from the register r2 to get the true digit from the ASCII
-      	SUB	r3, r3, #48		  	; instruction 6 : subtract #48 from the register r3 to get the true digit from the ASCII
+      	SUB	r2, r2, #0x30		  	; instruction 5 : subtract #0x30 from the register r2 to get the true digit from the ASCII
+      	SUB	r3, r3, #0x30		  	; instruction 6 : subtract #0x30 from the register r3 to get the true digit from the ASCII
       	ADD	r2, r2, r2, LSL #1		; instruction 7 : multiply 3 times digit with odd index stored in register r2 by adding 
                                   		;                 with #1 bit left shift
       	ADD	r4, r4, r2		  	; instruction 8 : add the product stored in register r2 to register r4 with the sum of odd 

@@ -12,7 +12,7 @@ public class asn2 {
 
         try{
 
-            BufferedReader reader = new BufferedReader(new FileReader("girl.img"));
+            BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
             String[] current;
             char[][] token = new char[71][71];
